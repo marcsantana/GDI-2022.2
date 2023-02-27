@@ -18,7 +18,6 @@ CREATE TABLE Logradouro (
       CONSTRAINT Logradouro_pkey PRIMARY KEY (CEP),
       CONSTRAINT Logradouro_fkey FOREIGN KEY (CPF_Usuario) REFERENCES Usuario(CPF)
 );
--- 81 9 87440170
 
 CREATE TABLE Contato (
     CPF_Usuario VARCHAR2(11),
