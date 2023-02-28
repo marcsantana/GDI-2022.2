@@ -1,5 +1,3 @@
--- missing CREATE SEQUENCE command
-
 CREATE TABLE Usuario (
       CPF VARCHAR2(11),
       Nome VARCHAR2(100) NOT NULL,
@@ -70,6 +68,18 @@ CREATE TABLE Evento (
       CHECK (Duracao BETWEEN 0 AND 366),
       CONSTRAINT Evento_pkey PRIMARY KEY (ID_Evento)
 );
+
+CREATE SEQUENCE seq_id_evento
+      START WITH 1
+      INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER gera_evt_id
+      BEFORE INSERT ON EVENTO
+      FOR EACH ROW
+      BEGIN
+            SELECT seq_id_evento.nextval INTO :new.ID_EVENTO FROM dual;
+      END;
+/
 
 CREATE TABLE Conta (
       Nome_Usuario VARCHAR2(30),
