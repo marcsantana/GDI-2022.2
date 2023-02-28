@@ -1,19 +1,22 @@
+-- missing CREATE SEQUENCE command
+
 CREATE TABLE Usuario (
       CPF VARCHAR2(11),
-      Nome VARCHAR2(20),
-      Idade NUMBER,
-  
+      Nome VARCHAR2(100) NOT NULL,
+      Idade NUMBER NOT NULL,
+      
+      CHECK (Idade >= 18),
       CONSTRAINT Usuario_pkey PRIMARY KEY (CPF)
 );
 
 CREATE TABLE Logradouro (
       CPF_Usuario VARCHAR2(11),
-      País VARCHAR2(10),
+      País VARCHAR2(10) NOT NULL,
       CEP VARCHAR2(8),
-      Estado VARCHAR2(18),
-      Cidade VARCHAR2(30),
-      Rua VARCHAR2(30),
-      Numero NUMBER,
+      Estado VARCHAR2(18) NOT NULL,
+      Cidade VARCHAR2(30) NOT NULL,
+      Rua VARCHAR2(30) NOT NULL,
+      Numero NUMBER NOT NULL,
 
       CONSTRAINT Logradouro_pkey PRIMARY KEY (CEP),
       CONSTRAINT Logradouro_fkey FOREIGN KEY (CPF_Usuario) REFERENCES Usuario(CPF)
@@ -36,7 +39,7 @@ CREATE TABLE Compositor (
 
 CREATE TABLE Musico (
       CPF_Musico VARCHAR2(11),
-      Nome_Artistico VARCHAR2(20),
+      Nome_Artistico VARCHAR2(20) NOT NULL,
 
       CONSTRAINT Musico_pkey PRIMARY KEY (CPF_Musico),
       CONSTRAINT Musico_fkey FOREIGN KEY (CPF_Musico) REFERENCES Usuario(CPF)
@@ -44,7 +47,7 @@ CREATE TABLE Musico (
 
 CREATE TABLE Patrocinador (
       CPF_Patrocinador VARCHAR2(11),
-      CNPJ VARCHAR2(14),
+      CNPJ VARCHAR2(14) UNIQUE,
 
       CONSTRAINT Patrocinador_pkey PRIMARY KEY (CPF_Patrocinador),
       CONSTRAINT Patrocinador_fkey FOREIGN KEY (CPF_Patrocinador) REFERENCES Usuario(CPF)
@@ -52,19 +55,19 @@ CREATE TABLE Patrocinador (
 
 CREATE TABLE Empresa (
       CNPJ_Empresa VARCHAR2(14),
-      Nome_Fantasia VARCHAR2(20),
+      Nome_Fantasia VARCHAR2(20) NOT NULL,
 
       CONSTRAINT Empresa_pkey PRIMARY KEY (CNPJ_Empresa)
 );
 
---- ATENÇÃO NESSA TABELA, não faria sentido ter a duração como Data (era melhor refatorar para uma Data Final). Se um Evento fosse durar 1 ano, por exemplo, poderíamos colocar que a Duração seria de 365 dias, considerando essa chave apenas como dias.
 CREATE TABLE Evento (
       ID_Evento VARCHAR2(10),
       Localizacao VARCHAR2(15),
       Data_Inicio DATE,
-      Data_Fim DATE,
+      Duracao NUMBER(3,0), -- um evento pode durar até 1 ano (366 dias para ano bissexto)
       Nome VARCHAR2(20),
 
+      CHECK (Duracao BETWEEN 0 AND 366),
       CONSTRAINT Evento_pkey PRIMARY KEY (ID_Evento)
 );
 
