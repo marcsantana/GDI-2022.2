@@ -4,6 +4,8 @@ INSERT INTO Logradouro
 VALUES ('89547832565', 'Brasil', '54410320', 'PE', 'Jaboatão dos Guararapes', 'Rua Maria Rita Barradas', 36);
 INSERT INTO Contato
 VALUES ('89547832565', '81993338673');
+INSERT INTO Contato
+VALUES ('89547832565', '81993238173');
 
  
 INSERT INTO Usuario 
@@ -12,6 +14,8 @@ INSERT INTO Logradouro
 VALUES ('65924587136', 'Brasil', '54350320', 'PE', 'Jaboatão dos Guararapes', 'Rua Santa Terezinha', 45);
 INSERT INTO Contato
 VALUES ('65924587136', '81993338674');
+INSERT INTO Contato
+VALUES ('65924587136', '81993238174');
 
 
 INSERT INTO Usuario 
@@ -20,6 +24,8 @@ INSERT INTO Logradouro
 VALUES ('78922398471', 'Brasil', '03928040', 'SP', 'São Paulo', 'Rua Mário Tarenghi', 71);
 INSERT INTO Contato
 VALUES ('78922398471', '81993338675');
+INSERT INTO Contato
+VALUES ('78922398471', '81993238175');
 
 
 INSERT INTO Usuario
@@ -77,6 +83,8 @@ INSERT INTO Logradouro
 VALUES ('48759659899', 'Brasil', '58079252', 'PB', 'João Pessoa', 'Rua Climene Pontes da Costa', 13);
 INSERT INTO Contato
 VALUES ('48759659899', '81993338682');
+INSERT INTO Contato
+VALUES ('48759659899', '81993238182');
 
 
 
