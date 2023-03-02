@@ -1,3 +1,4 @@
+--Insert infos definidas com CPF
 INSERT INTO Usuario 
 VALUES ('89547832565','Gabriel Carvalho', 18);
 INSERT INTO Logradouro
@@ -6,6 +7,7 @@ INSERT INTO Contato
 VALUES ('89547832565', '81993338673');
 INSERT INTO Contato
 VALUES ('89547832565', '81993238173');
+INSERT INTO conta VALUES ('Gabriel', 'Carvalho2565', 'Gabriel565@gmail.com', '89547832565');
 
  
 INSERT INTO Usuario 
@@ -16,6 +18,7 @@ INSERT INTO Contato
 VALUES ('65924587136', '81993338674');
 INSERT INTO Contato
 VALUES ('65924587136', '81993238174');
+INSERT INTO conta VALUES ('Francisca', 'rancisca7136', 'Francisca136@gmail.com', '65924587136');
 
 
 INSERT INTO Usuario 
@@ -26,6 +29,7 @@ INSERT INTO Contato
 VALUES ('78922398471', '81993338675');
 INSERT INTO Contato
 VALUES ('78922398471', '81993238175');
+INSERT INTO conta VALUES ('José', 'sé922398471', 'José471@gmail.com', '78922398471');
 
 
 INSERT INTO Usuario
@@ -34,7 +38,7 @@ INSERT INTO Logradouro
 VALUES ('00541639874', 'Brasil', '04891990', 'SP', 'São Paulo', 'Rua Filomena Belmont', 123);
 INSERT INTO Contato
 VALUES ('00541639874', '81993338676');
-
+INSERT INTO conta VALUES ('Tomás', 'ascimento541639874', 'Tomás874@gmail.com', '00541639874');
 
 
 INSERT INTO Usuario
@@ -43,15 +47,17 @@ INSERT INTO Logradouro
 VALUES ('89456918267', 'Brasil', '30512171', 'MG', 'Belo Horizonte', 'Beco Padre Teixeira', 42);
 INSERT INTO Contato
 VALUES ('89456918267', '81993338677');
+INSERT INTO conta VALUES ('Marcelo', 'Santana18267', 'Marcelo267@gmail.com', '89456918267');
 
 
 
 INSERT INTO Usuario
-VALUES ('74028498321', 'Ícaro Nunes', 25);
+VALUES ('74028498321', 'Ícaro Nunes', 25); 
 INSERT INTO Logradouro 
 VALUES ('74028498321', 'Brasil', '26250630', 'RJ', 'Nova Iguaçu', 'Rua Marília Barbosa', 223);
 INSERT INTO Contato
 VALUES ('74028498321', '81993338678');
+INSERT INTO conta VALUES ('Ícaro', 'nes8321', 'Ícaro321@gmail.com', '74028498321');
 
 
 INSERT INTO Usuario
@@ -60,14 +66,16 @@ INSERT INTO Logradouro
 VALUES ('12584970220', 'Brasil', '30620525', 'MG', 'Belo Horizonte', 'Rua Quatro Mil e Seis', 98);
 INSERT INTO Contato
 VALUES ('12584970220', '81993338679');
+INSERT INTO conta VALUES ('João', 'João970220', 'João220@gmail.com', '12584970220');
 
 
 INSERT INTO Usuario
-VALUES ('7418360275', 'Eliab Bernardino', 84);
+VALUES ('7418360275', 'Eliab Bernardino', 84); --acho que esse cpf ta menor que o resto
 INSERT INTO Logradouro 
 VALUES ('7418360275', 'Brasil', '68120991', 'PA', 'Santarém', 'Estrada Santarém-Mujuí', 89);
 INSERT INTO Contato
 VALUES ('7418360275', '81993338680');
+INSERT INTO conta VALUES ('Eliab', 'Bernardino60275', 'Eliab275@gmail.com', '7418360275');
 
 
 INSERT INTO Usuario
@@ -76,6 +84,8 @@ INSERT INTO Logradouro
 VALUES ('78541036942', 'Brasil', '58011298', 'PB', 'João Pessoa', 'Rua 15 de Janeiro', 194);
 INSERT INTO Contato
 VALUES ('78541036942', '81993338681');
+INSERT INTO conta VALUES ('Maria', 'duarda6942', 'Maria942@gmail.com', '78541036942');
+
 
 INSERT INTO Usuario
 VALUES ('48759659899','Ana Beatriz',23);
@@ -85,7 +95,7 @@ INSERT INTO Contato
 VALUES ('48759659899', '81993338682');
 INSERT INTO Contato
 VALUES ('48759659899', '81993238182');
-
+INSERT INTO conta VALUES ('Ana', 'Ana759659899', 'Ana899@gmail.com', '48759659899');
 
 
 -- INSERT Evento ---------------------------------------------------------------------------------------------------
