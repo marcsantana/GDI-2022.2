@@ -110,3 +110,57 @@ VALUES ('Bethel, NY', '15-Aug-1969', 4, 'Woodstock');
 INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
 VALUES ('São Paulo', '02-Sep-2023', 5, 'The Town 2023');
 --------------------------------------------------------------------------------------------------------------------
+
+
+
+-- INSERT Compositor -----------------------------------------------------------------------------------------------
+-- 'Eliab Bernardino'
+INSERT INTO Compositor (CPF_COMPOSITOR)
+VALUES ('7418360275');
+
+-- 'Francisca Silva'
+INSERT INTO Compositor (CPF_COMPOSITOR)
+VALUES ('65924587136');
+
+-- 'José Amargo'
+INSERT INTO Compositor (CPF_COMPOSITOR)
+VALUES ('78922398471');
+
+-- 'Ana Beatriz'
+INSERT INTO Compositor (CPF_COMPOSITOR)
+VALUES ('48759659899');
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+-- INSERT Musica ---------------------------------------------------------------------------------------------------
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('7418360275', 'O Segundo Sol', 'MPB', 1999);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('7418360275', 'I Kissed A Girl', 'Pop', 2008);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('7418360275', 'Malvadão 3', 'Rap', 2021);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('65924587136', 'Kiss Me More', 'Rap', 2021);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('65924587136', 'Mastermind', 'Folk', 2022);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('78922398471', 'Born & Raised', 'Country', 2012);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('78922398471', 'Take Me Home, Country Roads', 'Country', 1971);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('48759659899', 'Quando A Chuva Passar', 'MPB', 2005);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('48759659899', 'Se Eu Não Te Amasse Tanto Assim', 'MPB', 1999);
+
+INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
+VALUES ('48759659899', 'Viver Sem Ti', 'MPB', 2010);
+--------------------------------------------------------------------------------------------------------------------
