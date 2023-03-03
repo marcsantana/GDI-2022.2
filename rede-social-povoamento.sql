@@ -174,3 +174,30 @@ VALUES ('48759659899', 'Se Eu Não Te Amasse Tanto Assim', 'MPB', 1999);
 INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
 VALUES ('48759659899', 'Viver Sem Ti', 'MPB', 2010);
 --------------------------------------------------------------------------------------------------------------------
+
+
+-- INSERT Patrocinador------------------------------------------------------------------------------------------------------------------
+INSERT INTO Patrocinador 
+VALUES ('89547832565', '12345678910112') --CPF gabriel
+
+
+INSERT INTO Patrocinador 
+VALUES ('65924587136', '11109865432101') --CPF Francisca
+
+
+INSERT INTO Patrocinador 
+VALUES ('78922398471', '12109865432101') --CPF José
+
+
+--INSERT Empresa------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO Empresa
+VALUES ('12109865432101', 'Jositos') --Empresa cadastrada com cps de José
+
+
+INSERT INTO Empresa
+VALUES ('11109865432101', 'Francisbacon') --Empresa cadastrada com cps de Fran
+
+
+INSERT INTO Empresa
+VALUES ('12345678910112', 'Games Gabe') --Empresa cadastrada com cps de Gabriel
