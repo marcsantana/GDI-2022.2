@@ -236,6 +236,7 @@ VALUES ('78922398471', 'José Saramago');
 INSERT INTO Musico (CPF_Musico, Nome_Artistico)
 VALUES ('48759659899', 'Ana Cavaquinho');
 ----------------------------------------------------------------------------------------------------------------------
+
 -- Insert Seguir------------------------------------------------------------------------------------------------------
 -- Tomás Segue Ana Beatriz
 INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
@@ -252,3 +253,16 @@ VALUES ('78922398471','71443532565');
 -- Eliab Bernardino Segue Marcelo Santana
 INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
 VALUES ('7418360275','89456918267');
+------------------------------------------------------------------------------------------------
+
+-- Insert Publicar ---------------------------------------------------------------------------------------------------
+
+-- Gabriel Publica The Town 2023 1677810806 'O evento de música The Town 2023 em São Paulo será imperdível pela sua incrível lineup de artistas, performances espetaculares e atmosfera única, prometendo ser uma experiência inesquecível para os amantes de música.'
+INSERT INTO Publicar (CPF_Patrocinador, Data_Publicacao, Conteudo)
+VALUES ('89547832565', 1677810806, 'O evento de música The Town 2023 em São Paulo será imperdível pela sua incrível lineup de artistas, performances espetaculares e atmosfera única, prometendo ser uma experiência inesquecível para os amantes de música.');
+
+-- Francisca publica sobre Live Aid Londres em 1622257199 ''
+INSERT INTO Publicar (CPF_Patrocinador, Data_Publicacao, Conteudo)
+VALUES ('65924587136', 1622257199, 'O evento Live Aid Londres de 1985 foi histórico e imperdível por reunir alguns dos maiores artistas da época para arrecadar fundos para combater a fome na África. Com mais de 1,5 bilhão de telespectadores em todo o mundo, foi um momento icônico da cultura pop e um exemplo de como a música pode ser usada para ajudar a mudar o mundo.');
+
+-------------------------------------------------------------------------------------------------------------
