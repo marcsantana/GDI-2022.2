@@ -266,3 +266,66 @@ INSERT INTO Publicar (CPF_Patrocinador, Data_Publicacao, Conteudo)
 VALUES ('65924587136', 1622257199, 'O evento Live Aid Londres de 1985 foi histórico e imperdível por reunir alguns dos maiores artistas da época para arrecadar fundos para combater a fome na África. Com mais de 1,5 bilhão de telespectadores em todo o mundo, foi um momento icônico da cultura pop e um exemplo de como a música pode ser usada para ajudar a mudar o mundo.');
 
 -------------------------------------------------------------------------------------------------------------
+
+-- INSERT Comparecer -------------------------------------------------------------------------------------------------------------------
+INSERT INTO Comparecer VALUES ('89547832565', 'H899945224')
+
+INSERT INTO Comparecer VALUES ('89547832565', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('65924587136', 'F899945231')
+
+INSERT INTO Comparecer VALUES ('65924587136', 'D898845231')
+
+INSERT INTO Comparecer VALUES ('78922398471', 'H899945224')
+
+INSERT INTO Comparecer VALUES ('78922398471', 'B987654321')
+
+INSERT INTO Comparecer VALUES ('78922398471', 'C897645231')
+
+INSERT INTO Comparecer VALUES ('00541639874', 'D898845231')
+
+INSERT INTO Comparecer VALUES ('00541639874', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('00541639874', 'G8993545224')
+
+INSERT INTO Comparecer VALUES ('89456918267', 'H899945224')
+
+INSERT INTO Comparecer VALUES ('89456918267', 'C897645231')
+
+INSERT INTO Comparecer VALUES ('89456918267', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('74028498321', 'B987654321')
+
+INSERT INTO Comparecer VALUES ('74028498321', 'D898845231')
+
+INSERT INTO Comparecer VALUES ('12584970220', 'B987654321')
+
+INSERT INTO Comparecer VALUES ('12584970220', 'H899945224')
+
+INSERT INTO Comparecer VALUES ('12584970220', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('7418360275', 'F899945231')
+
+INSERT INTO Comparecer VALUES ('7418360275', 'C897645231')
+
+INSERT INTO Comparecer VALUES ('7418360275', 'D898845231')
+
+INSERT INTO Comparecer VALUES ('78541036942', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('78541036942', 'D898845231')
+
+INSERT INTO Comparecer VALUES ('78541036942', 'G8993545224')
+
+INSERT INTO Comparecer VALUES ('48759659899', 'D898845231')
+
+INSERT INTO Comparecer VALUES ('71447832565', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('71447832565', 'B987654321')
+
+INSERT INTO Comparecer VALUES ('71447832565', 'F899945231')
+
+INSERT INTO Comparecer VALUES ('71443532565', 'A123456789')
+
+INSERT INTO Comparecer VALUES ('71443532565', 'C897645231')
+
+INSERT INTO Comparecer VALUES ('71443532565', 'F899945231')
