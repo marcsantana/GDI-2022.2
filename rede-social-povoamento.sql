@@ -236,3 +236,19 @@ VALUES ('78922398471', 'José Saramago');
 INSERT INTO Musico (CPF_Musico, Nome_Artistico)
 VALUES ('48759659899', 'Ana Cavaquinho');
 ----------------------------------------------------------------------------------------------------------------------
+-- Insert Seguir------------------------------------------------------------------------------------------------------
+-- Tomás Segue Ana Beatriz
+INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
+VALUES ('00541639874','48759659899');
+-- Ícaro Nunes Segue Amadeo Carvalho
+INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
+VALUES ('74028498321','71447832565');
+-- Amado Batista Segue José Amargo
+INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
+VALUES ('71443532565','78922398471');
+-- José Amargo Segue Amado Batista
+INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
+VALUES ('78922398471','71443532565');
+-- Eliab Bernardino Segue Marcelo Santana
+INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
+VALUES ('7418360275','89456918267');
