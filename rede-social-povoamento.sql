@@ -70,12 +70,12 @@ INSERT INTO conta VALUES ('João', 'João970220', 'João220@gmail.com', '1258497
 
 
 INSERT INTO Usuario
-VALUES ('7418360275', 'Eliab Bernardino', 84); --acho que esse cpf ta menor que o resto
+VALUES ('74183602750', 'Eliab Bernardino', 84); --acho que esse cpf ta menor que o resto
 INSERT INTO Logradouro 
-VALUES ('7418360275', 'Brasil', '68120991', 'PA', 'Santarém', 'Estrada Santarém-Mujuí', 89);
+VALUES ('74183602750', 'Brasil', '68120991', 'PA', 'Santarém', 'Estrada Santarém-Mujuí', 89);
 INSERT INTO Contato
-VALUES ('7418360275', '81993338680');
-INSERT INTO conta VALUES ('Eliab', 'Bernardino60275', 'Eliab275@gmail.com', '7418360275');
+VALUES ('74183602750', '81993338680');
+INSERT INTO conta VALUES ('Eliab', 'Bernardino60275', 'Eliab275@gmail.com', '74183602750');
 
 
 INSERT INTO Usuario
@@ -146,7 +146,7 @@ VALUES ('G8993545224', 'São Paulo', '02-Sep-2023', 5, 'The Town 2023');
 -- INSERT Compositor -----------------------------------------------------------------------------------------------
 -- 'Eliab Bernardino'
 INSERT INTO Compositor (CPF_COMPOSITOR)
-VALUES ('7418360275');
+VALUES ('741836027500');
 
 -- 'Francisca Silva'
 INSERT INTO Compositor (CPF_COMPOSITOR)
@@ -165,13 +165,13 @@ VALUES ('48759659899');
 
 -- INSERT Musica ---------------------------------------------------------------------------------------------------
 INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
-VALUES ('7418360275', 'O Segundo Sol', 'MPB', 1999);
+VALUES ('74183602750', 'O Segundo Sol', 'MPB', 1999);
 
 INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
-VALUES ('7418360275', 'I Kissed A Girl', 'Pop', 2008);
+VALUES ('74183602750', 'I Kissed A Girl', 'Pop', 2008);
 
 INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
-VALUES ('7418360275', 'Malvadão 3', 'Rap', 2021);
+VALUES ('74183602750', 'Malvadão 3', 'Rap', 2021);
 
 INSERT INTO Musica (CPF_COMPOSITOR, NOME_MUSICA, GENERO, ANO)
 VALUES ('65924587136', 'Kiss Me More', 'Rap', 2021);
@@ -252,80 +252,105 @@ INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
 VALUES ('78922398471','71443532565');
 -- Eliab Bernardino Segue Marcelo Santana
 INSERT INTO Seguir (CPF_Seguido, CPF_Seguidor)
-VALUES ('7418360275','89456918267');
+VALUES ('741836027500','89456918267');
 ------------------------------------------------------------------------------------------------
 
 -- Insert Publicar ---------------------------------------------------------------------------------------------------
 
--- Gabriel Publica The Town 2023 1677810806 'O evento de música The Town 2023 em São Paulo será imperdível pela sua incrível lineup de artistas, performances espetaculares e atmosfera única, prometendo ser uma experiência inesquecível para os amantes de música.'
+-- Gabriel Publica The Town 2023 1677810806 Descricao
 INSERT INTO Publicar (CPF_Patrocinador, Data_Publicacao, Conteudo)
 VALUES ('89547832565', 1677810806, 'O evento de música The Town 2023 em São Paulo será imperdível pela sua incrível lineup de artistas, performances espetaculares e atmosfera única, prometendo ser uma experiência inesquecível para os amantes de música.');
 
--- Francisca publica sobre Live Aid Londres em 1622257199 ''
+-- Francisca publica sobre Live Aid Londres em 1622257199  Descricao
 INSERT INTO Publicar (CPF_Patrocinador, Data_Publicacao, Conteudo)
 VALUES ('65924587136', 1622257199, 'O evento Live Aid Londres de 1985 foi histórico e imperdível por reunir alguns dos maiores artistas da época para arrecadar fundos para combater a fome na África. Com mais de 1,5 bilhão de telespectadores em todo o mundo, foi um momento icônico da cultura pop e um exemplo de como a música pode ser usada para ajudar a mudar o mundo.');
 
 -------------------------------------------------------------------------------------------------------------
 
 -- INSERT Comparecer -------------------------------------------------------------------------------------------------------------------
-INSERT INTO Comparecer VALUES ('89547832565', 'H899945224')
+INSERT INTO Comparecer VALUES ('89547832565', 'H899945224');
 
-INSERT INTO Comparecer VALUES ('89547832565', 'A123456789')
+INSERT INTO Comparecer VALUES ('89547832565', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('65924587136', 'F899945231')
+INSERT INTO Comparecer VALUES ('65924587136', 'F899945231');
 
-INSERT INTO Comparecer VALUES ('65924587136', 'D898845231')
+INSERT INTO Comparecer VALUES ('65924587136', 'D898845231');
 
-INSERT INTO Comparecer VALUES ('78922398471', 'H899945224')
+INSERT INTO Comparecer VALUES ('78922398471', 'H899945224');
 
-INSERT INTO Comparecer VALUES ('78922398471', 'B987654321')
+INSERT INTO Comparecer VALUES ('78922398471', 'B987654321');
 
-INSERT INTO Comparecer VALUES ('78922398471', 'C897645231')
+INSERT INTO Comparecer VALUES ('78922398471', 'C897645231');
 
-INSERT INTO Comparecer VALUES ('00541639874', 'D898845231')
+INSERT INTO Comparecer VALUES ('00541639874', 'D898845231');
 
-INSERT INTO Comparecer VALUES ('00541639874', 'A123456789')
+INSERT INTO Comparecer VALUES ('00541639874', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('00541639874', 'G8993545224')
+INSERT INTO Comparecer VALUES ('00541639874', 'G8993545224');
 
-INSERT INTO Comparecer VALUES ('89456918267', 'H899945224')
+INSERT INTO Comparecer VALUES ('89456918267', 'H899945224');
 
-INSERT INTO Comparecer VALUES ('89456918267', 'C897645231')
+INSERT INTO Comparecer VALUES ('89456918267', 'C897645231');
 
-INSERT INTO Comparecer VALUES ('89456918267', 'A123456789')
+INSERT INTO Comparecer VALUES ('89456918267', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('74028498321', 'B987654321')
+INSERT INTO Comparecer VALUES ('74028498321', 'B987654321');
 
-INSERT INTO Comparecer VALUES ('74028498321', 'D898845231')
+INSERT INTO Comparecer VALUES ('74028498321', 'D898845231');
 
-INSERT INTO Comparecer VALUES ('12584970220', 'B987654321')
+INSERT INTO Comparecer VALUES ('12584970220', 'B987654321');
 
-INSERT INTO Comparecer VALUES ('12584970220', 'H899945224')
+INSERT INTO Comparecer VALUES ('12584970220', 'H899945224');
 
-INSERT INTO Comparecer VALUES ('12584970220', 'A123456789')
+INSERT INTO Comparecer VALUES ('12584970220', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('7418360275', 'F899945231')
+INSERT INTO Comparecer VALUES ('74183602750', 'F899945231');
 
-INSERT INTO Comparecer VALUES ('7418360275', 'C897645231')
+INSERT INTO Comparecer VALUES ('74183602750', 'C897645231');
 
-INSERT INTO Comparecer VALUES ('7418360275', 'D898845231')
+INSERT INTO Comparecer VALUES ('74183602750', 'D898845231');
 
-INSERT INTO Comparecer VALUES ('78541036942', 'A123456789')
+INSERT INTO Comparecer VALUES ('78541036942', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('78541036942', 'D898845231')
+INSERT INTO Comparecer VALUES ('78541036942', 'D898845231');
 
-INSERT INTO Comparecer VALUES ('78541036942', 'G8993545224')
+INSERT INTO Comparecer VALUES ('78541036942', 'G8993545224');
 
-INSERT INTO Comparecer VALUES ('48759659899', 'D898845231')
+INSERT INTO Comparecer VALUES ('48759659899', 'D898845231');
 
-INSERT INTO Comparecer VALUES ('71447832565', 'A123456789')
+INSERT INTO Comparecer VALUES ('71447832565', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('71447832565', 'B987654321')
+INSERT INTO Comparecer VALUES ('71447832565', 'B987654321');
 
-INSERT INTO Comparecer VALUES ('71447832565', 'F899945231')
+INSERT INTO Comparecer VALUES ('71447832565', 'F899945231');
 
-INSERT INTO Comparecer VALUES ('71443532565', 'A123456789')
+INSERT INTO Comparecer VALUES ('71443532565', 'A123456789');
 
-INSERT INTO Comparecer VALUES ('71443532565', 'C897645231')
+INSERT INTO Comparecer VALUES ('71443532565', 'C897645231');
 
-INSERT INTO Comparecer VALUES ('71443532565', 'F899945231')
+INSERT INTO Comparecer VALUES ('71443532565', 'F899945231');
+
+-- Insert Apresentar ---------------------------------------------------------------------
+-- Ana Beatriz apresenta 'Se Eu Não Te Amasse Tanto Assim' de Ana Beatriz
+
+INSERT INTO Apresentar(CPF_Musico, Nome_Musica, CPF_COMPOSITOR)
+VALUES ('48759659899', 'Se Eu Não Te Amasse Tanto Assim', '48759659899');
+
+-- José Saramago apresenta 'Malvadão 3' de Eliab Bernardino
+
+INSERT INTO Apresentar(CPF_Musico, Nome_Musica, CPF_COMPOSITOR)
+VALUES ('78922398471', 'Malvadão 3', '74183602750');
+
+-- Amado Belo apresenta Viver Sem Ti de Ana Beatriz
+INSERT INTO Apresentar(CPF_Musico, Nome_Musica, CPF_COMPOSITOR)
+VALUES ('71443532565', 'Viver Sem Ti', '48759659899');
+
+-- Amadeus Mozart apresenta Mastermind de Francisca Silva
+INSERT INTO Apresentar(CPF_Musico, Nome_Musica, CPF_COMPOSITOR)
+VALUES ('71447832565', 'Mastermind', '65924587136');
+----------------------------------------------------------------------------------------
+
+-- INSERT Reagir------------------------------------------------------------------------------------
+INSERT INTO Reagir VALUES ('89547832565', '65924587136', 'D898845231', '1677810806');
+
+INSERT INTO Reagir VALUES ('89547832565', '65924587136', 'D898845231', '1677810806');
