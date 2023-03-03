@@ -99,26 +99,26 @@ INSERT INTO conta VALUES ('Ana', 'Ana759659899', 'Ana899@gmail.com', '4875965989
 
 
 -- INSERT Evento ---------------------------------------------------------------------------------------------------
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('São Paulo', '28-Jul-2022', 4, 'Lollapalooza 2022');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('A123456789', 'São Paulo', '28-Jul-2022', 4, 'Lollapalooza 2022');
 
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('Rio de Janeiro', '02-Sep-2022', 10, 'Rock In Rio IX');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('B987654321','Rio de Janeiro', '02-Sep-2022', 10, 'Rock In Rio IX');
 
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('Olinda', '18-Feb-2023', 4, 'Carvalheira 2023');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('C897645231','Olinda', '18-Feb-2023', 4, 'Carvalheira 2023');
 
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('Recife', '17-Feb-2023', 5, 'Carnaval Recife');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('D898845231', 'Recife', '17-Feb-2023', 5, 'Carnaval Recife');
 
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('Londres', '13-Jul-1985', 1, 'Live Aid Londres');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('F899945231','Londres', '13-Jul-1985', 1, 'Live Aid Londres');
 
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('Bethel, NY', '15-Aug-1969', 4, 'Woodstock');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('H899945224', 'Bethel, NY', '15-Aug-1969', 4, 'Woodstock');
 
-INSERT INTO Evento (LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
-VALUES ('São Paulo', '02-Sep-2023', 5, 'The Town 2023');
+INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
+VALUES ('G8993545224', 'São Paulo', '02-Sep-2023', 5, 'The Town 2023');
 --------------------------------------------------------------------------------------------------------------------
 
 
