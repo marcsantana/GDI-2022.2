@@ -97,6 +97,26 @@ INSERT INTO Contato
 VALUES ('48759659899', '81993238182');
 INSERT INTO conta VALUES ('Ana', 'Ana759659899', 'Ana899@gmail.com', '48759659899');
 
+INSERT INTO Usuario 
+VALUES ('71447832565','Amadeo Carvalho', 18);
+INSERT INTO Logradouro
+VALUES ('71447832565', 'Brasil', '54120320', 'PB', 'Joao Pessoa', 'Rua Rita Barradas', 74);
+INSERT INTO Contato
+VALUES ('71447832565', '81683338673');
+INSERT INTO Contato
+VALUES ('71447832565', '81673238173');
+INSERT INTO conta VALUES ('Amadeo', 'Carvalho7144', 'Amadeo7144@gmail.com', '71447832565');
+
+
+INSERT INTO Usuario 
+VALUES ('71443532565','Amado Batista', 18);
+INSERT INTO Logradouro
+VALUES ('71443532565', 'Brasil', '54120320', 'DF', 'Brasilia', 'Rua Maria Barradas', 94);
+INSERT INTO Contato
+VALUES ('71443532565', '81690338673');
+INSERT INTO Contato
+VALUES ('71443532565', '81679138173');
+INSERT INTO conta VALUES ('Amado', 'Batista2565', 'Amado2565@gmail.com', '71443532565');
 
 -- INSERT Evento ---------------------------------------------------------------------------------------------------
 INSERT INTO Evento (ID_Evento, LOCALIZACAO, DATA_INICIO, DURACAO, NOME)
@@ -201,3 +221,18 @@ VALUES ('11109865432101', 'Francisbacon') --Empresa cadastrada com cps de Fran
 
 INSERT INTO Empresa
 VALUES ('12345678910112', 'Games Gabe') --Empresa cadastrada com cps de Gabriel
+
+-- INSERT MUSICO----------------------------------------------------------------------------------------------------
+-- Amadeo Carvalho
+INSERT INTO Musico (CPF_Musico, Nome_Artistico)
+VALUES ('71447832565', 'Amadeus Mozart');
+-- Amado Batista
+INSERT INTO Musico (CPF_Musico, Nome_Artistico)
+VALUES ('71443532565', 'Amado Belo');
+-- 'José Amargo'
+INSERT INTO Musico (CPF_Musico, Nome_Artistico)
+VALUES ('78922398471', 'José Saramago');
+-- 'Ana Beatriz'
+INSERT INTO Musico (CPF_Musico, Nome_Artistico)
+VALUES ('48759659899', 'Ana Cavaquinho');
+----------------------------------------------------------------------------------------------------------------------
