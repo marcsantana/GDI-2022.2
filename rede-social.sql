@@ -1,5 +1,3 @@
--- missing CREATE SEQUENCE command
-
 CREATE TABLE Usuario (
       CPF VARCHAR2(11),
       Nome VARCHAR2(100) NOT NULL,
@@ -60,8 +58,12 @@ CREATE TABLE Empresa (
       CONSTRAINT Empresa_pkey PRIMARY KEY (CNPJ_Empresa)
 );
 
+CREATE SEQUENCE seq_id_evento
+      START WITH 1
+      INCREMENT BY 1;
+
 CREATE TABLE Evento (
-      ID_Evento VARCHAR2(10),
+      ID_Evento NUMBER DEFAULT seq_id_evento.nextval,
       Localizacao VARCHAR2(15),
       Data_Inicio DATE,
       Duracao NUMBER(3,0), -- um evento pode durar até 1 ano (366 dias para ano bissexto)
@@ -106,7 +108,7 @@ CREATE TABLE Seguir (
 
 CREATE TABLE Comparecer (
       CPF_Usuario VARCHAR2(11),
-      ID_Evento VARCHAR2(10),
+      ID_Evento NUMBER,
 
       CONSTRAINT Comparecer_pkey PRIMARY KEY (CPF_Usuario,ID_Evento),
       
@@ -117,7 +119,7 @@ CREATE TABLE Comparecer (
 
 CREATE TABLE Publicar (
       CPF_Patrocinador VARCHAR2(11),
-      ID_Evento VARCHAR2(10),
+      ID_Evento NUMBER,
       Data_Publicacao DATE,
       Conteudo VARCHAR2(350),
 
@@ -131,7 +133,7 @@ CREATE TABLE Publicar (
 CREATE TABLE Reagir (
       CPF_Usuario VARCHAR2(11),
       CPF_Patrocinador VARCHAR2(11),
-      ID_Evento VARCHAR2(10),
+      ID_Evento NUMBER,
       Data_Publicacao DATE,
 
       CONSTRAINT Reagir_pkey PRIMARY KEY (CPF_Usuario, CPF_Patrocinador, ID_Evento, Data_Publicacao),
@@ -143,7 +145,7 @@ CREATE TABLE Reagir (
 
 CREATE TABLE Apresentar (
       CPF_Musico VARCHAR2(11),
-      ID_Evento VARCHAR2(10),
+      ID_Evento NUMBER,
       Nome_Musica VARCHAR2(60),
       CPF_Compositor VARCHAR2(11),
 
