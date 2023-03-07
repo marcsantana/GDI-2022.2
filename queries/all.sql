@@ -28,7 +28,7 @@ SELECT * FROM MUSICA WHERE NOME_MUSICA LIKE '%Kiss%';
 
 
 
--- IS NULL
+-- IS NULL, LEFT JOIN
 --Selects all users that have no compositions
 SELECT USUARIO.*
     FROM USUARIO
