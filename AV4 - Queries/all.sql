@@ -46,3 +46,7 @@ SELECT USUARIO.*
     FROM USUARIO
     INNER JOIN COMPOSITOR ON USUARIO.CPF = COMPOSITOR.CPF_COMPOSITOR;
 --------------------
+<<<<<<< HEAD:queries/all.sql
+=======
+
+>>>>>>> 9268688d8e81e6bd932fa2cf817d875381d85921:AV4 - Queries/all.sql
