@@ -48,7 +48,7 @@ SELECT USUARIO.*
 --------------------
 
 -- MAX
--- Select composers with most musics made
+-- Select composers with most compositions
 SELECT U.Nome, COUNT(*) AS "QTDE_MUSICAS"
     FROM Musica M
     INNER JOIN Usuario U ON U.CPF = M.CPF_COMPOSITOR
@@ -57,3 +57,15 @@ SELECT U.Nome, COUNT(*) AS "QTDE_MUSICAS"
         SELECT MAX(COUNT(*)) FROM Musica
         GROUP BY (CPF_Compositor)
     );
+
+-- MIN
+-- Select composers with less compositions
+SELECT U.Nome, COUNT(*) AS "QTDE_MUSICAS"
+    FROM Musica M
+    INNER JOIN Usuario U ON U.CPF = M.CPF_COMPOSITOR
+    GROUP BY (U.Nome)
+    HAVING COUNT(*) = (
+        SELECT MIN(COUNT(*)) FROM Musica
+        GROUP BY (CPF_Compositor)
+    );
+
