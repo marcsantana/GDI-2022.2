@@ -10,8 +10,8 @@
 - [x] LIKE
 - [x] IS NULL ou IS NOT NULL
 - [x] INNER JOIN
-- [ ] MAX
-- [ ] MIN
+- [x] MAX
+- [x] MIN
 - [x] AVG
 - [ ] COUNT
 - [ ] LEFT ou RIGHT ou FULL OUTER JOIN 
@@ -21,7 +21,7 @@
 - [ ] SUBCONSULTA COM ALL
 - [x] ORDER BY
 - [x] GROUP BY
-- [ ] HAVING
+- [x] HAVING
 - [ ] UNION ou INTERSECT ou MINUS
 - [ ] CREATE VIEW
 - [ ] GRANT / REVOKE
