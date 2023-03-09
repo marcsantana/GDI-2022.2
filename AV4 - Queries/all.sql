@@ -47,3 +47,13 @@ SELECT USUARIO.*
     INNER JOIN COMPOSITOR ON USUARIO.CPF = COMPOSITOR.CPF_COMPOSITOR;
 --------------------
 
+-- MAX
+-- Select composers with most musics made
+SELECT U.Nome, COUNT(*) AS "QTDE_MUSICAS"
+    FROM Musica M
+    INNER JOIN Usuario U ON U.CPF = M.CPF_COMPOSITOR
+    GROUP BY (U.Nome)
+    HAVING COUNT(*) = (
+        SELECT MAX(COUNT(*)) FROM Musica
+        GROUP BY (CPF_Compositor)
+    );
