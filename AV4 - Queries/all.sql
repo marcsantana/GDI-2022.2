@@ -122,6 +122,12 @@ SELECT * FROM PATROCINADOR
 WHERE CPF_PATROCINADOR IN (SELECT CPF_PATROCINADOR FROM PUBLICAR WHERE DATA_PUBLICACAO > '01-Jul-2022');
 -------------------------
 
+-- SUBCONSULTA COM ANY
+-- Selects all USUARIO that has some follower
+SELECT * FROM USUARIO WHERE CPF = ANY(SELECT CPF_SEGUIDO FROM SEGUIR);
+-------------------------
+
+
 -- CREATE PROCEDURE
 -- Procedure to insert Values into the Evento table;
 CREATE OR REPLACE PROCEDURE inserir_Evento (
