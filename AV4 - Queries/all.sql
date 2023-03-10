@@ -108,7 +108,7 @@ SELECT idade, COUNT(*) AS Qtd_Usuarios
 ------------------------
 
 
--- HAVING
+-- HAVING, COUNT
 -- Groups the songs by their 'genero', but only the songs that have the 'MPB' genero;
 SELECT genero, COUNT(*) AS Qtd_Musica_Genero
 	FROM MUSICA
