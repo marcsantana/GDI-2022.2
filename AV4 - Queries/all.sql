@@ -122,6 +122,34 @@ SELECT * FROM PATROCINADOR
 WHERE CPF_PATROCINADOR IN (SELECT CPF_PATROCINADOR FROM PUBLICAR WHERE DATA_PUBLICACAO > '01-Jul-2022');
 -------------------------
 
+-- SUBCONSULTA COM ANY
+-- Selects all USUARIO that has some follower
+SELECT * FROM USUARIO WHERE CPF = ANY(SELECT CPF_SEGUIDO FROM SEGUIR);
+-------------------------
+
+
+-- SUBCONSULTA COM ALL
+-- Selects all CPF_USUARIO of all USERS that attended to all EVENTO before '01-Jan-1980'
+SELECT CPF_USUARIO FROM COMPARECER
+WHERE ID_EVENTO = ALL(
+    SELECT c.ID_EVENTO FROM COMPARECER c JOIN EVENTO e ON c.ID_EVENTO = e.ID_EVENTO WHERE DATA_INICIO < '01-Jan-1980'
+);
+-------------------------
+
+
+-- UNION
+-- Selects all CPF that belong to users that have 
+--   -attended to all EVENTO before '01-Jan-1980'; or
+--   -IDADE > 30
+SELECT CPF_USUARIO AS CPF FROM COMPARECER WHERE ID_EVENTO = ALL(SELECT c.ID_EVENTO FROM COMPARECER c JOIN EVENTO e ON c.ID_EVENTO = e.ID_EVENTO WHERE DATA_INICIO < '01-Jan-1980') UNION SELECT CPF FROM USUARIO WHERE IDADE > 30;
+--------------------------
+
+-- CREATE VIEW
+-- Creates a view to store the current_date minus the date of an event, querying events that happened before 2000
+CREATE VIEW TEMPO_DESDE_EVENTOS_ANTIGOS AS SELECT TRUNC(CURRENT_DATE - DATA_INICIO, 0) AS DIAS_DESDE_EVENTO, EVENTO.* FROM EVENTO WHERE DATA_INICIO < '01-Jan-2000';
+SELECT * FROM TEMPO_DESDE_EVENTOS_ANTIGOS;
+--------------------------
+
 -- CREATE PROCEDURE
 -- Procedure to insert Values into the Evento table;
 CREATE OR REPLACE PROCEDURE inserir_Evento (
