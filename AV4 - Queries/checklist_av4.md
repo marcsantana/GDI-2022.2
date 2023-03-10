@@ -23,7 +23,7 @@
 - [x] GROUP BY
 - [x] HAVING
 - [x] UNION ou INTERSECT ou MINUS
-- [ ] CREATE VIEW
+- [x] CREATE VIEW
 - [x] GRANT / REVOKE
 ## PL/SQL
 - [ ] USO DE RECORD
