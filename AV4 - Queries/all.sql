@@ -116,6 +116,11 @@ SELECT genero, COUNT(*) AS Qtd_Musica_Genero
 	HAVING genero LIKE 'MPB';
 ------------------------------------
 
+-- SUBCONSULTA COM IN, SUBCONSULTA COM OPERADOR RELACIONAL
+-- Selects all PATROCINADOR that have published after '01-Jul-2022'
+SELECT * FROM PATROCINADOR
+WHERE CPF_PATROCINADOR IN (SELECT CPF_PATROCINADOR FROM PUBLICAR WHERE DATA_PUBLICACAO > '01-Jul-2022');
+-------------------------
 
 -- CREATE PROCEDURE
 -- Procedure to insert Values into the Evento table;
